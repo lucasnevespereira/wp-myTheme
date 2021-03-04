@@ -2,3 +2,7 @@
 Theme Name: myTheme
 Author: Lucas Neves Pereira
 */
+
+body {
+  background-color: aliceblue;
+}
