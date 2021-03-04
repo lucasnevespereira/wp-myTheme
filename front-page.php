@@ -2,10 +2,13 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-12 pt-2">
-    <div class="container p-5 bg-dark">
-      <h2 class="text-light">Testing Bootstrap</h2>
-    </div>
+    <div class="col-12 p-5 pb-5">
+      <h1><?php the_title()?></h1>
+
+      <?php if (have_posts()) : while(have_posts()) : the_post()?>
+        <?php the_content(); ?>
+      <?php endwhile; endif;?>
+
     </div>
   </div>
 </div>
