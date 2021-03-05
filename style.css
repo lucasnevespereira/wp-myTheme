@@ -14,3 +14,22 @@ header {
   width: 100%;
   padding: 50px;
 }
+
+.navigation {
+  display: flex;
+  justify-content: start;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: var(--bs-gray-dark);
+}
+
+.navigation a:hover {
+  color: var(--bs-gray);
+}
