@@ -32,9 +32,17 @@ add_action('wp_enqueue_scripts', 'loadjs');
 // Add theme menus feature to dashboard
 add_theme_support( "menus");
 
+add_theme_support( "post-thumbnails");
+
+// Handle menus position
 register_nav_menus( 
   array(
     'top-menu' => __('Top Menu', 'theme'),
     'footer-menu' => __('Footer Menu', 'theme'),
   )
 );
+
+
+// Handle Images
+add_image_size('smallest', 300, 300, true );
+add_image_size('largest', 800, 800, true );
